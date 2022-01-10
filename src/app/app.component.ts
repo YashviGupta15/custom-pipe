@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from './employee';
 
 @Component({
   selector: 'my-app',
@@ -8,14 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Search Pipe';
   searchText = '';
-  characters = [
-    'Ant-Man',
-    'Aquaman',
-    'Asterix',
-    'The Atom',
-    'The Avengers',
-    'Batgirl',
-    'Batman',
-    'Batwoman',
+  characters: Employee[] = [
+    {
+      id: 1,
+      name: 'AntMan',
+    },
+    {
+      id: 2,
+      name: 'Radhika',
+    },
   ];
 }
