@@ -9,7 +9,7 @@ import { Employee } from './employee';
 export class AppComponent {
   title = 'Search Pipe';
   searchText = '';
-  characters: Employee[] = [
+  employees: Employee[] = [
     {
       id: 1,
       name: 'AntMan',
